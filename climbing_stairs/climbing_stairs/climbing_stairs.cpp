@@ -29,15 +29,17 @@ int Solution::climbStairs2(int n) {
 
     // 时间复杂度为O(N)
 
-    int x = 1;
-    int y = 2;
-    int z = 3;
+
+    int z;
 
     if (n <= 2) {
         return n;
     }
     else {
-        // 由于只有三种情况， 所以建立三个数值，随后用for循环来进行叠加
+        // 由于只有三种情况， 所以建立两个数值，随后用for循环来进行叠加
+        int x = 1;
+        int y = 2;
+
         for (int i = 3; i <= n; ++i) {
             z = x + y;
             x = y;
