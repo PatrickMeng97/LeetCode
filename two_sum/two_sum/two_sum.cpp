@@ -4,12 +4,32 @@
 #include <iostream>
 #include"two_sum.h"
 
-vector<int> twoSum(vector<int>& nums, int target) {
-
+vector<int>Solution:: twoSum(vector<int>& nums, int target) {
+    int i = 0;
+    int j = 0;
+    // 暴力解法 时间复杂度为O(^N)
+    for (int i = 0; i < nums.size() -1; i++) {
+        for (int j = i + 1; j < nums.size(); j++) {
+            if (nums[i] + nums[j] == target) {
+                return { i,j };
+            }
+        }
+    }
+    return { i,j };
 }
 int main()
 {
+    Solution sol;
+    vector<int> a;
+    a.push_back(2);
+    a.push_back(7);
+    a.push_back(11);
+    a.push_back(15);
+    a.push_back(28);
     std::cout << "Hello World!\n";
+
+    cout << sol.twoSum(a, 30)[0] << endl;
+    cout << sol.twoSum(a, 30)[1] << endl;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
