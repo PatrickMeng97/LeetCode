@@ -16,6 +16,8 @@ vector<int>Solution:: twoSum(vector<int>& nums, int target) {
         }
     }
     return { i,j };
+
+
 }
 int main()
 {
