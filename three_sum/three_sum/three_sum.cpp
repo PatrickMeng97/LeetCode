@@ -2,6 +2,28 @@
 //
 
 #include <iostream>
+#include"three_sum.h"
+
+vector<vector<int>>Solution::threeSum1(vector<int>& nums) {
+    //暴力解法 时间复杂度为O(N^3)
+    vector<int> res;
+    for (int i = 0; i < nums.size() - 2; i++) {
+        for (int j = i + 1; j < nums.size() - 1; j++) {
+            for (int k = j+1; k < nums.size(); k++) {
+                if (nums[i] + nums[j] + nums[k] == 0) {
+
+                }
+            }
+        }
+    }
+
+}
+vector<vector<int>>Solution::threeSum2(vector<int>& nums){
+
+}
+vector<vector<int>>Solution::threeSum3(vector<int>& nums) {
+
+}
 
 int main()
 {
