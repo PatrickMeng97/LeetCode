@@ -7,7 +7,7 @@
 vector<int>Solution:: twoSum(vector<int>& nums, int target) {
     int i = 0;
     int j = 0;
-    // 暴力解法 时间复杂度为O(^N)
+    // 暴力解法 时间复杂度为O(N^2)
     for (int i = 0; i < nums.size() -1; i++) {
         for (int j = i + 1; j < nums.size(); j++) {
             if (nums[i] + nums[j] == target) {
@@ -16,8 +16,6 @@ vector<int>Solution:: twoSum(vector<int>& nums, int target) {
         }
     }
     return { i,j };
-
-
 }
 int main()
 {
